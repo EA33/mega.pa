@@ -155,7 +155,9 @@
 
 	}
 	&__num {
-		align-self: flex-end;
+		align-self: flex-start;
+		width: 35px;
+		height: 46px;
 		margin-right: 30px;
 		margin-bottom: 15px;
 		@include media ("<=md"){
@@ -167,10 +169,10 @@
 	&__text {
 		font-size: 14px;
 		margin-bottom: 0;
-		@include media ("<=md"){
-			font-size: 12px;
-			line-height: 20px;
-		}
+		// @include media ("<=md"){
+		// 	font-size: 12px;
+		// 	line-height: 20px;
+		// }
 	}
 
 }
