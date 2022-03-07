@@ -73,11 +73,11 @@ $colorText: #818181;
 			font-size: 14px;
 			line-height: 22px;
 		}
-		@include media ("<=sm") {
-			font-size: 12px;
-			line-height: 20px;
-			margin-bottom: 20px;
-		}
+		// @include media ("<=sm") {
+		// 	font-size: 14px;
+		// 	line-height: 20px;
+		// 	margin-bottom: 20px;
+		// }
 	}
 
 	&__image {
