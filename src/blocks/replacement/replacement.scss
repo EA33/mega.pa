@@ -1,0 +1,223 @@
+$colorSubtitle: #614EFD;
+$lineVertical: #818181;
+$colorText: #818181;
+
+.replacement {
+	$self: &;
+	background: linear-gradient(to bottom, #3ADFFD  0%, #614EFD  49.48%,#3ADFFD  100%) top 70px center / cover no-repeat transparent;
+	
+	&__container {
+		background-color: #fff;
+	}
+	&__oilfilter-inner {
+		display: flex;
+		background-color: $bgColor;
+		align-items: center;
+		@include media ("<=xs"){
+			flex-wrap: wrap;
+		}
+	}
+	
+	&__title {
+		@extend %title;
+		margin-bottom: 30px;
+		br {
+			@include media ("<=md"){
+			display: none;
+			}
+			@include media ("<=sm"){
+			display: block;
+			}
+		}
+		@include media ("<=md"){
+			font-size: 24px;
+			line-height: 36px;
+			margin-bottom: 20px;
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 100px;
+			height: 1px;
+			background-color: $bgLine;	
+			margin-top: 30px;
+			@include media ("<=md"){
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__oilfilter-content {
+		max-width: 528px;
+		padding: 120px 0 0 95px;
+		margin-right: 30px;
+		@include media ("<=md"){
+			padding-top: 65px;
+			padding-left: 40px;
+		}
+		@include media ("<=sm"){
+			padding-left: 25px;
+		}
+		@include media ("<=xs"){
+			padding: 50px 10px 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	&__oilfilter-title {
+		font-size: 24px;
+		line-height: 36px;
+		color: $colorSubtitle;
+		margin-bottom: 20px;
+		@include media ("<=md"){
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__oilfilter-text {
+		color: $colorText;
+		margin-bottom: 20px;
+		@include media ("<=sm"){
+			font-size: 14px;
+			line-height: 22px;
+		}
+		&_style {
+			font-style: italic;
+		}
+	}
+
+	&__oilfilter-image {
+		width: 443px;
+		height: 540px;
+		padding: 30px 0;
+		@include media ("<=lg"){
+			width: 357px;
+			height: 435px;
+		}
+		@include media ("<=md"){
+			width: 273px;
+			height: 332px;
+		}
+	}
+
+	&__cabinfilter-inner {
+		display: flex;
+		background-color: $bgColor;
+		@include media ("<=md"){
+			align-items: center;
+		}
+		@include media ("<=xs"){
+			flex-wrap: wrap-reverse;
+		}
+	}
+
+	&__cabinfilter-content {
+		padding-top: 20px;
+		padding-right: 95px;
+		margin-left: 30px;
+		@include media ("<=md"){
+			padding-right: 40px;
+		}
+		@include media ("<=sm"){
+			padding-right: 25px;
+		}
+		@include media ("<=xs"){
+			padding: 0 10px;
+			margin-left: 0;
+		}
+	}
+
+	&__cabinfilter-title {
+		font-size: 24px;
+		line-height: 36px;
+		color: $colorSubtitle;
+		margin-bottom: 20px;
+		@include media ("<=md"){
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		
+	}
+
+	&__cabinfilter-text {
+		color: $colorText;
+		margin-bottom: 20px;
+		@include media ("<=sm"){
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	&__cabinfilter-image {
+		width: 443px;
+		height: 540px;
+		@include media ("<=lg"){
+			width: 357px;
+			height: 435px;
+		}
+		@include media ("<=md"){
+			width: 273px;
+			height: 332px;
+		}
+	}
+
+	&__exclamation-inner {
+		display: flex;
+		background-color: $bgColor;
+	}
+
+	&__exclamation-content {
+		max-width: 760px;
+		padding-top: 30px;
+		padding-left: 95px;
+		margin-right: 30px;
+		box-sizing: border-box;
+		@include media ("<=md"){
+			padding-left: 40px;
+		}
+		@include media ("<=sm"){
+			padding-top: 20px;
+			padding-left: 10px;
+		}
+	}
+
+	&__exclamation-text:first-child {
+		font-style: normal;
+		margin-bottom: 27px;
+		color: $colorFont;
+	}
+	
+	&__exclamation-text {
+		font-style: italic;
+		color: $colorText;
+		position: relative;
+		margin-left: 30px;
+		@include media ("<=sm"){
+			margin-left: 10px;
+		}
+		
+		&::before {
+			content: "";
+			display: block;
+			background-color: $lineVertical;
+			width: 1px;
+			height: 50px;
+			position: absolute;
+			top: 50%;
+			left: -30px;
+			transform: translateY(-50%);
+			@include media ("<=md"){
+				left: -10px;
+			}
+		}
+	}
+
+	&__exclamation-image {
+		@include media ("<=sm"){
+			display: none;
+		}
+	}
+
+}

@@ -1,0 +1,243 @@
+.footer {
+	$self: &;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 100px 0;
+	background: url(images/decoration_elements_footer.png) left 5% bottom -145px / 330px 218px no-repeat transparent;
+	@include media ("<=xxlg"){
+		background: none;;
+	}
+	@include media ("<=sm"){
+		padding: 50px 0 85px;
+	}
+	&__container {
+		// color: $bgColor;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		@include media ("<=xs"){
+			flex-wrap: wrap;
+		}
+	}
+	
+	&__iframe {
+		filter: hue-rotate(37deg) contrast(110%) saturate(158%);
+		border-radius: 30px;
+		@include media ("<=sm"){
+			width: 500px;
+		}
+		@include media ("<=sm"){
+			width: 100%;
+		}
+	}
+	&__map {
+		width: 921px;
+		height: 320px;
+		// border-top-right-radius: 30px;
+		// border-bottom-right-radius: 30px;
+		border-radius: 30px;
+		// background-color: #4436B1;
+		margin-left: -165px;
+		@include media ("<=sm"){
+			margin-left: -15px;
+		}
+	}
+
+	&__top-contacts {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+		// max-width: 22.22222%;
+		margin-top: auto;
+		padding-left: 70px;
+		// margin-left: auto;
+		white-space: nowrap;
+		@include media ("<=xs"){
+			margin-right: auto;
+			justify-content: flex-start;
+			padding-left: 10px;
+			padding-top: 50px;
+		}
+	}
+
+	&__top-item + &__top-item {
+		margin-top: 25px;
+		&_last {
+			margin-top: 35px;
+			margin-bottom: 10px;
+		}
+		@include media ("<=sm"){
+			margin-top: 15px;
+			&_last {
+				margin-top: 25px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 28px;
+		color: #000;
+		@include media ("<=lg"){
+			font-size: 20px;
+			line-height: 26px;
+		}
+		@include media ("<=md"){
+			font-size: 18px;
+			line-height: 26px;
+		}
+	}
+
+	&__address {
+		font-size: 20px;
+		line-height: 28px;
+		color: $colorLink;
+		@include media ("<=lg"){
+			font-size: 16px;
+			line-height: 24px;
+		}
+		@include media ("<=md"){
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	&__email {
+		font-size: 20px;
+		line-height: 28px;
+		@include media ("<=lg"){
+			font-size: 16px;
+			line-height: 24px;
+		}
+		@include media ("<=md"){
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	&__phone {
+		font-size: 20px;
+		line-height: 28px;
+		@include media ("<=lg"){
+			font-size: 16px;
+			line-height: 24px;
+		}
+		@include media ("<=md"){
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	&__button {
+		border: 1px solid $colorLink;
+		color: $colorFont;
+		padding: 10px 30px;
+		border-radius: 30px;
+		font-size: 20px;
+		line-height: 28px;
+		@include media ("<=lg"){
+			font-size: 16px;
+			line-height: 24px;
+		}
+		@include media ("<=md"){
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 100px;
+		@include media ("<=lg"){
+			justify-content: center;
+		}
+		@include media ("<=sm"){
+			padding-top: 50px;
+		}
+		@include media ("<=xs"){
+			display: none;
+		}
+	}
+
+	&__logo {
+		margin-right: 40px;
+		margin-bottom: 15px;
+	}
+	
+	&__logo-img {
+		width: 202px;
+		@include media ("<=lg"){
+			width: 190px;
+		}
+		@include media ("<=md"){
+			width: 100%;
+		}
+	}
+
+	&__menu-list {
+		display: flex;
+	}
+	&__menu-item {
+		margin-right: 40px;
+		margin-bottom: 15px;
+		@include media ("<=sm"){
+			&:nth-child(4) {
+				margin-right: 0;
+			}
+			
+		}
+	}
+	&__menu-link {
+		font-weight: 500;
+		transition: all .5s linear;
+
+		&:hover {
+			color:$colorLink;
+
+		&::before {
+			opacity: 1;
+		}
+	}
+	&::before {
+		content:""; 
+		width: 20px;
+		height: 2px;
+		background-color: $colorLink;
+		border-radius: 5px;
+		display: block;
+		transition: opacity .5s linear;
+		opacity: 0;
+		// margin-bottom: 3px;
+	}
+		
+	@include media ("<=lg") {
+		font-size: 14px;
+	}
+
+	@include media ("<=md") {
+		font-size: 16px;
+	}
+		
+	
+	}
+
+	&__schedule {
+		display: flex;
+		color: $colorSchedule;
+		&::before {
+			content:"";
+			display: block;
+			background: url(images/icons-sprite.svg#icon-schedule-view-blue) left/ 24px 24px no-repeat transparent;
+			width: 24px;
+			height: 24px;
+			padding-right: 15px;
+			margin-bottom: 15px;
+		}
+	}
+
+}

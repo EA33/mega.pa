@@ -1,0 +1,156 @@
+.about {
+	$self: &;
+	background: linear-gradient(to bottom, #614EFD 0%, #3ADFFD 59.9%, #FFFFFF 80%) top 70px center / cover no-repeat;
+	&__container {
+		background-color: $bgColor;
+		filter: drop-shadow( 0 0 5px rgba(0,0,0,0.05));
+		border-radius: 50px;
+	}
+	&__inner {
+		padding: 120px 95px 50px;
+		@include media ("<=md"){
+			padding: 120px 40px 50px;
+		}
+		@include media ("<=sm"){
+			padding: 85px 25px 15px;
+		}
+		@include media ("<=xs"){
+			padding: 50px 10px 30px;
+		}
+	}
+
+	&__title {
+		@extend %title;
+		text-align: center;
+		margin-bottom: 30px;
+
+		@include media ("<=md"){
+			font-size: 24px;
+			line-height: 36px;
+			margin-bottom: 20px;
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 90px;
+			height: 1px;
+			background-color: $bgLine;	
+			margin: 30px auto 0;
+			@include media ("<=md"){
+				margin-top: 20px;
+				width: 68px;
+			}
+			@include media ("<=sm"){
+				margin-top: 15px;
+			}
+		}
+	}
+
+	&__text {
+		max-width: 780px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 85px;
+		@include media ("<=sm"){
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__benefits-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 900px;
+		width: 100%;
+		margin: 0 auto;
+		@include media ("<=xxs"){
+			justify-content: center;
+		}
+	}
+
+	&__benefits-title {
+		display: flex;
+		align-items: center;
+		@extend %title;
+		margin: 0 15px 30px;
+		margin-bottom: 30px;
+		max-width: calc(35.66666% - 30px);
+		@include media ("<=lg"){
+			font-size: 30px;
+			line-height: 42px;
+		}
+		@include media ("<=md"){
+			font-size: 24px;
+			line-height: 36px;
+			margin-bottom: 20px;
+			max-width: 170px;
+		}
+		@include media ("<=xxs"){
+			max-width: 100%;
+		}
+	}
+
+	&__benefits-item {
+		max-width: calc(30.55555% - 30px);
+		width: 100%;
+		margin: 0 15px 70px;
+		padding-top: 150px;
+		// flex-shrink: 1;
+		@include media ("<=md"){
+			padding-top: 104px;
+		}
+		@include media ("<=sm"){
+			margin-bottom: 50px;
+		}
+		@include media ("<=xs"){
+			max-width: calc(50% - 30px);
+			margin-bottom: 20px;
+		}
+		@include media ("<=xxs"){
+			max-width: 100%;
+		}
+		&:nth-child(2) {
+			background: url(images/icons-sprite.svg#icon-benefit_1-view-blue) top center / 150px 150px no-repeat transparent;
+			@include media ("<=md"){
+				background-size: 103px 103px;
+			}
+		}
+		&:nth-child(3) {
+			background: url(images/icons-sprite.svg#icon-benefit_2-view-blue) top 26px center / 102px 97px no-repeat transparent;
+			@include media ("<=md"){
+				background-size: 67px 64px;
+			}
+		}
+		&:nth-child(4) {
+			background: url(images/icons-sprite.svg#icon-benefit_3-view-blue) top 43px center / 112px 64px no-repeat transparent;
+			@include media ("<=md"){
+				background-size: 75px 44px;
+			}
+		}
+		&:nth-child(5) {
+			background: url(images/icons-sprite.svg#icon-benefit_4-view-blue) top 32px center / 98px 97px no-repeat transparent;
+			@include media ("<=md"){
+				background-size: 64px 64px;
+			}
+		}
+		&:nth-child(6) {
+			background: url(images/icons-sprite.svg#icon-benefit_5-view-blue) top center / 150px 150px no-repeat transparent;
+			@include media ("<=md"){
+				background-size: 103px 103px;
+			}
+		}
+	}
+
+	&__benefits-text {
+		font-size: 14px;
+		line-height: 22px;
+		text-align: center;
+		@include media ("<=sm"){
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+
+}

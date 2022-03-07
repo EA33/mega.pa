@@ -1,0 +1,68 @@
+$colorText: #818181;
+.states {
+	$self: &;
+	background: url(images/decoration_elements_states.png)top 55px left 95% / 257px 460px no-repeat transparent;
+	max-width: 1440px;
+	margin: 0 auto;
+	@include media ("<=xxlg"){
+		background: none;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		@include media ("<=xs"){
+			flex-wrap: wrap-reverse;
+		}
+	}
+	
+	&__img {
+		width: 443px;
+		height: 540px;
+		@include media ("<=lg"){
+			width: 357px;
+			height: 435px;
+		}
+		@include media ("<=md"){
+			width: 273px;
+			height: 332px;
+		}
+	}
+	
+	&__content {
+		margin-left: 30px;
+		padding-right: 95px;
+		@include media ("<=md"){
+			padding-right: 40px;
+		}
+		@include media ("<=md"){
+			padding-right: 25px;
+		}
+		@include media ("<=xs"){
+			padding: 50px 10px 0 10px;
+			margin: 0;
+		}
+		
+	}
+	
+	&__title {
+		@extend %title;
+		margin-bottom: 60px;
+		@include media ("<=md"){
+			font-size: 24px;
+			line-height: 36px;
+			margin-bottom: 35px;
+		}
+		
+	}
+	
+	&__text {
+		margin-bottom: 20px;
+		color: $colorText;
+		@include media ("<=sm"){
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+}

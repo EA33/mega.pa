@@ -1,0 +1,176 @@
+.benefits {
+	$self: &;
+	max-width: 1810px;
+	margin: 0 auto;
+	background: url(images/decoration_elements_benefits.png) top center / 1672px 824px no-repeat transparent;
+	@include media ("<=xxlg"){
+		background: none;
+	}
+	&__inner {
+		padding: 120px 0 100px;
+		@include media ("<=md"){
+			padding: 85px 0 50px;
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		@extend %title;
+		text-align: center;
+		margin-bottom: 60px;
+		// @include media ("<=lg"){
+		// 	display: block;
+		// }
+		@include media ("<=md"){
+			font-size: 24px;
+			line-height: 36px;
+		}
+		@include media ("<=xs"){
+			margin-bottom: 30px;
+			display: block;
+		}
+		&::before, &::after {
+			content: "";
+			display: block;
+			width: 1px;
+			height: 1px;
+			flex-grow: 1;
+			background-color: $bgLine;
+			margin: 0 30px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		// @include media ("<=xlg"){
+		// 	margin:0 10px;
+		// }
+		
+	}
+	
+	&__item-wrapper {
+		max-width: calc(33.33333% - 30px);
+		width: 100%;
+		margin: 30px 30px 0 0;
+		@include media ("<=xs"){
+			max-width: calc(50% - 30px);
+			margin: 30px 20px 0 10px;
+		}
+		@include media ("<=xxs"){
+			margin-right: 10px;
+		}
+		@include media ("<=xxs"){
+			max-width: 100%;
+		}
+		&:nth-child(2) {
+			margin-right: 0;
+			max-width: 33.33333%;
+			@include media ("<=xs"){
+				margin: 30px 10px 0 10px;
+				max-width: calc( 50% - 30px);
+			}
+			@include media ("<=xxs"){
+				max-width: 100%;
+			}
+		}
+		&:nth-child(3) {
+			margin-right: 0;
+			margin-left: 30px;
+			@include media ("<=xs"){
+				margin: 30px 20px 0 10px;
+			}
+			@include media ("<=xxs"){
+				margin-right: 10px;
+			}
+		}
+		&:nth-child(4) {
+			margin-left: 16.666665%;
+			margin-right: 15px;
+    		max-width: calc( 33.33333% - 15px);
+			@include media ("<=xs"){
+				margin: 30px 10px 0 10px;
+				max-width: calc( 50% - 30px);
+			}
+			@include media ("<=xxs"){
+				max-width: 100%;
+			}
+			
+		}
+		&:nth-child(5) {
+			margin-right: 16.666665%;
+			margin-left: 15px;
+   			max-width: calc( 33.33333% - 15px);
+			@include media ("<=xs"){
+				margin: 30px 20px 0 10px;
+				max-width: calc( 50% - 30px);
+			}
+			@include media ("<=xxs"){
+				margin-right: 10px;
+				max-width: 100%;
+			}
+		}
+		&:nth-child(6) {
+			@include media ("<=xs"){
+				margin: 30px 10px 0 10px;
+			}
+		}
+		&:nth-child(7) {
+			 margin-right: 0;
+			 max-width: 33.33333%;
+			 @include media ("<=xs"){
+				max-width: calc( 50% - 30px);
+				margin: 30px 20px 0 10px;
+			}
+			@include media ("<=xxs"){
+				margin-right: 10px;
+				max-width: 100%;
+			}
+			
+		}
+		&:nth-child(8) {
+			margin-right: 0;
+			margin-left: 30px;
+			@include media ("<=xs"){
+				margin: 30px 10px 0 10px;
+				
+			}
+		}
+	}
+	&__item {
+	display: flex;
+	flex-direction: column;
+	max-width: 255px;
+	width: 100%;
+		@include media ("<=xs"){
+			max-width: 100%;
+		}
+	&_six, &_seven, &_eight {
+		margin-left: auto;
+	}
+	&_four, &_five  {
+		margin: 0 auto;
+	}
+
+	}
+	&__num {
+		align-self: flex-end;
+		margin-right: 30px;
+		margin-bottom: 15px;
+		@include media ("<=md"){
+			width: 23px;
+			height: 30px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		margin-bottom: 0;
+		@include media ("<=md"){
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+
+}

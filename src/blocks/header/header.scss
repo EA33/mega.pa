@@ -1,0 +1,67 @@
+$bg: linear-gradient(to bottom, #CCC6FF, rgba(210, 204, 255, 0.4) 46.35%, #ffffff);
+
+.header {
+	$self: &;
+	overflow: hidden;
+	//  box-shadow: 0 0 7px rgba(0,0,0,0.05);
+	&__background {
+		filter: drop-shadow(0 0 10px rgba(3,0,26,0.05));
+		background: $bg;
+		min-height: 150px;
+	}
+	
+	&__inner {
+		display: flex;
+		align-items: center;	
+		min-height: 150px;
+		margin: -150px 10px 0;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__block-logo {
+		max-width: 317px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 20px;
+	}
+
+	&__logo {
+		display: flex;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		@include media ("<=xs") {
+			width: 130px;
+		}
+	}
+
+	&__descriptor {
+		font-weight: 600;
+		margin: 0 auto;
+		text-align: center;
+		text-transform: uppercase;
+		@include media ("<=lg"){
+			font-size: 14px;
+		}
+		@include media ("<=xs"){
+			font-size: 12px;
+		}
+	}
+
+	&__icon {
+		display: block;
+		width: 61px;
+		height: 61px;
+		border-radius: 50%;
+		border: 1px solid $colorStroke;
+		background: url(images/icons-sprite.svg#icon-phone_header-view-dark) center/ 20px 20px no-repeat transparent;
+		@include media ("<=lg"){
+			font-size: 14px;
+		}
+		@include media ("<=xs"){
+			font-size: 12px;
+		}
+	}
+
+
+}

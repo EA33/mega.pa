@@ -1,0 +1,61 @@
+$bgBtn: #614EFD;
+$textColor: #ffffff;
+.button {
+	$self: &;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 527px;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 600;
+	padding: 11px 30px;
+	box-sizing: border-box;
+	background-color: $bgBtn;
+	border-radius: 30px;
+	color: $textColor;
+	@include media ("<=xlg"){
+		font-size: 20px;
+		line-height: 24px;
+		max-width: 464px;
+	}
+	@include media ("<=lg"){
+		font-size: 16px;
+		line-height: 20px;
+		max-width: 402px;
+	}
+	@include media ("<=md"){
+		font-size: 12px;
+		line-height: 14px;
+		padding: 11px 20px;
+		max-width: 372px;
+	}
+	@include media ("<=sm"){
+		margin-left: 0;
+		padding: 9px 15px;
+		max-width: 309px;
+	}
+	&::before, &::after {
+		content: "";
+		width: 25px;
+		height: 7.5px;
+		@include media ("<=xxs"){
+			width: 15px;
+		}
+	}
+	
+	&::after {
+		background: url(images/icons-sprite.svg#icon-arrow_right-view-white) center/ cover no-repeat transparent;
+		margin-left: 20px;
+		@include media ("<=sm"){
+			margin-left: 10px;
+		}
+	}
+	&::before {
+		background: url(images/icons-sprite.svg#icon-arrow_left-view-white) center/ cover no-repeat transparent;
+		margin-right: 20px;
+		@include media ("<=sm"){
+			margin-right: 10px;
+		}
+	}
+}
