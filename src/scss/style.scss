@@ -41,6 +41,8 @@ $breakpoints: (
 
 // @include font-face("Roboto-Black", "RBBL");
 // @import "../../node_modules/owl.carousel/dist/assets/owl.carousel";
+// @import "../../node_modules/fancybox/dist/scss/jquery.fancybox";
+@import "../../node_modules/fancybox/dist/scss/jquery.fancybox"; 
 @include font-face("Baltic Hafft", "BH");
 @import url(https://fonts.googleapis.com/css?family=Roboto+Serif:300,regular,500,600,700,700italic&display=swap);
 

@@ -629,10 +629,10 @@
                         <p class="best__bottom-text">Широкий ассортимент моделей. Высокое качество сборки
                         </p>
                     </div>
-                    <a class="best__btn button" href="#">
-                        Зарегистрироваться и заказать
-                    </a>
                 </div>
+                <a class="best__btn button" href="#">
+                    Зарегистрироваться и заказать
+                </a>
             </div>
         </div>
     </div>
@@ -687,8 +687,8 @@
                         href="mailto:mega.parts54@mail.ru">mega.parts54@mail.ru</a></li>
                 <li class="footer__top-item"> <a class="footer__phone" href="tel:+7 (913) 986-93-25">+7 (913)
                         986-93-25</a></li>
-                <li class="footer__top-item footer__top-item_last"><a class="footer__button" href="#">Заказать
-                        звонок</a></li>
+                <li class="footer__top-item footer__top-item_last"><a data-fancybox data-src="#modal"
+                        href="javascript:;" class="footer__button">Заказать звонок</a></li>
             </ul>
         </div>
         <div class="footer__bottom">
@@ -717,7 +717,21 @@
         </div>
     </div>
 </footer>
+<div id="modal" class="modal">
+    <div class="modal__inner">
+        <h3 class="modal__title">Заказать обратный звонок</h3>
+        <p class="modal__text">Имя</p>
+        <input class="modal__placeholder" type="text" placeholder="Введите имя">
+        <p class="modal__text">Телефон</p>
+        <input class="modal__placeholder" type="text" placeholder="Введите номер">
+        <div class="modal__buttons">
+            <input class="modal__submit button" type="submit" value="Отправить">
+            <button type="button" class="modal__close">Закрыть</button>
+        </div>
+    </div>
+</div>
 <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+<!-- <script type="text/javascript" charset="utf-8" src="jquery.fancybox.min.js"></script> -->
 <script src="common.js"></script>
 </body>
 

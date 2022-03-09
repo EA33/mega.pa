@@ -49,10 +49,12 @@
 		"webpack-stream": "^6.1.2"
 	},
 	"dependencies": {
+		"fancybox": "^3.0.1",
 		"jquery": "^3.6.0"
 	},
 	"externalJs": {
-		"jquery": "dist/jquery.min.js"
+		"jquery": "dist/jquery.min.js",
+		"fancybox": "dist/js/jquery.fancybox.min.js"
 	},
 	"ftp": {
 		"host": "",
