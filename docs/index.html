@@ -687,8 +687,9 @@
                         href="mailto:mega.parts54@mail.ru">mega.parts54@mail.ru</a></li>
                 <li class="footer__top-item"> <a class="footer__phone" href="tel:+7 (913) 986-93-25">+7 (913)
                         986-93-25</a></li>
-                <li class="footer__top-item footer__top-item_last"><a data-fancybox data-src="#modal"
-                        href="javascript:;" class="footer__button">Заказать звонок</a></li>
+                <li class="footer__top-item footer__top-item_last">
+                    <button class="footer__button" data-modal="contact-form">Заказать звонок</button>
+                </li>
             </ul>
         </div>
         <div class="footer__bottom">
@@ -716,23 +717,25 @@
             </div>
         </div>
     </div>
-</footer>
-<div id="modal" class="modal">
-    <div class="modal__inner">
-        <h3 class="modal__title">Заказать обратный звонок</h3>
-        <p class="modal__text">Имя</p>
-        <input class="modal__placeholder" type="text" placeholder="Введите имя">
-        <p class="modal__text">Телефон</p>
-        <input class="modal__placeholder" type="text" placeholder="Введите номер">
-        <div class="modal__buttons">
-            <input class="modal__submit button" type="submit" value="Отправить">
-            <button type="button" class="modal__close">Закрыть</button>
-        </div>
+    <div class="modal__hidden">
+    <div id="contact-form">
+        <form class="form">
+            <div class="form__inner">
+                <h3 class="form__title">Заказать обратный звонок</h3>
+                <p class="form__text">Имя</p>
+                <input class="form__placeholder" type="text" placeholder="Введите имя">
+                <p class="form__text">Телефон</p>
+                <input class="form__placeholder" type="text" placeholder="Введите номер">
+                <div class="form__buttons">
+                    <button class="form__submit button" type="submit">Отправить</button>
+                    <button class="form__close" type="button">Закрыть</button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
-<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="jquery.fancybox.min.js"></script>
-<script src="common.js"></script>
-</body>
+    <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+    <script src="common.js"></script>
+    </body>
 
-</html>
+    </html>
