@@ -61,6 +61,7 @@
 		padding: 8px 30px;
 		margin-right: 20px;
 		border: none;
+		cursor: pointer;
 		&::before, &::after {
 			content: "";
 			width: 25px;
@@ -97,6 +98,7 @@
 		border-radius: 30px;
 		color: $textColor;
 		border: none;
+		cursor: pointer;
 	}
 
 }
