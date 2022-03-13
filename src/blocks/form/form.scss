@@ -1,16 +1,21 @@
 .form {
 	$self: &;
+	box-sizing: border-box;
+		min-height: 100%;
+		transition: background-color 0.2s;
 	text-align: center;
-	width: 560px;
-	margin: 0 auto;
-	padding: 30px;
+	max-width: 560px;
+	// margin: 0 auto;
+	// padding: 40px;
 	border-radius: 30px;
-	border: 5px solid #fff;
-	filter: drop-shadow(0px 0px 30px  rgba(97, 78, 253, 0.1));
+
 	&__inner {
 		background-color: #fff;
-		padding: 80px 0 85px;
+		padding: 80px 40px 60px;
 		border-radius: 30px;
+		@include media ("<=xs"){
+			padding: 60px 20px 40px;
+		}
 		
 	}
 	&__title {
@@ -22,11 +27,13 @@
 	}
 
 	&__placeholder {
-		min-width: 400px;
+		max-width: 400px;
+		width: 100%;
 		padding: 5px 15px;
 		font-size: 16px;
 		line-height: 24px;
 		font-weight: 400;
+		box-sizing: border-box;
 		
 		border: 1px solid #C4C4C4;
 		border-radius: 30px;
@@ -43,14 +50,17 @@
 	&__text {
 		max-width: 400px;
 		margin: 15px auto 4px;
+		padding-left: 15px;
 		font-size: 14px;
 		line-height: 22px;
 		// font-weight: 600;
 		text-align: left;
 	}
 	&__buttons {
-		max-width: 365px;
+		max-width: 375px;
+		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		margin: 40px auto 0;
 	}
 
@@ -60,7 +70,14 @@
 		font-weight: 600;
 		padding: 8px 30px;
 		margin-right: 20px;
+		margin-bottom: 20px;
 		border: none;
+		box-sizing: border-box;
+		@include media ("<=xs"){
+			width: 100%;
+			max-width: none;
+			margin-right: 0;
+		}
 		cursor: pointer;
 		&::before, &::after {
 			content: "";
@@ -73,14 +90,14 @@
 		
 		&::after {
 			background: url(images/icons-sprite.svg#icon-arrow_right-view-white) center/ cover no-repeat transparent;
-			margin-left: 20px;
+			margin-left: 15px;
 			@include media ("<=sm"){
 				margin-left: 10px;
 			}
 		}
 		&::before {
 			background: url(images/icons-sprite.svg#icon-arrow_left-view-white) center/ cover no-repeat transparent;
-			margin-right: 20px;
+			margin-right: 15px;
 			@include media ("<=sm"){
 				margin-right: 10px;
 			}
@@ -93,12 +110,17 @@
 		line-height: 24px;
 		font-weight: 600;
 		padding: 8px 30px;
+		margin-bottom: 20px;
 		box-sizing: border-box;
 		background-color: #FD4E4E;
 		border-radius: 30px;
 		color: $textColor;
 		border: none;
 		cursor: pointer;
+		box-sizing: border-box;
+		@include media ("<=xs"){
+			width: 100%;
+		}
 	}
 
 }

@@ -14,7 +14,7 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 	let $modal = $(`#${cls}__underlay`);
 
-	let close = function(e) {
+	let close = function (e) {
 		e.preventDefault();
 		enablePageScroll();
 
@@ -26,10 +26,10 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 			.hide();
 	}
 
-	let open = function(e) {
+	let open = function (e) {
 		e.preventDefault();
 		disablePageScroll();
-		
+
 		if ($modal.is(":visible")) close(e);
 		let id = $(this).data('modal') || 'error';
 		let content = (id == '#') ? $(this).html() : $('#' + id).html();
@@ -41,7 +41,7 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 			.end()
 			.fadeIn();
 	}
-	
+
 	// Открыть модальное окно
 	$(`[data-${cls}]`).on('click', open);
 	// Открыть модальное окно из уже открытого окна
@@ -49,8 +49,13 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 	// Закрыть окошко
 	$(`.${cls}__close`).on('click', close);
 	// Закрыть по клику мимо окошка или esc
-	$(window).on('click keyup', function(e) {
+	$(window).on('click keyup', function (e) {
 		if (e.target == $modal[0] || e.which == 27) close(e);
 	});
+
+
+
+	$(`.${cls}__body`).on('click', '.form__close', close);
+
 
 })();

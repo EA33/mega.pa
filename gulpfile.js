@@ -141,7 +141,8 @@ function icons() {
 				blue: '#614EFD',
 				orange: '#FD8F3A',
 				white: '#ffffff',
-				dark: '#525252'
+				dark: '#525252',
+				black: '#000000'
 			}
 		}))
 		.pipe(gulp.dest(pth.pbl.img))
