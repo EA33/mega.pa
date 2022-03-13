@@ -1,3 +1,5 @@
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+
 (() => {
     let $menu = $('.menu');
     let $toggle = $('.menu__icon');
