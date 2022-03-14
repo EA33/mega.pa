@@ -10,9 +10,6 @@
 	@include media ("<=sm"){
 		padding: 50px 0 85px;
 	}
-	&__container {
-		// color: $bgColor;
-	}
 
 	&__top {
 		display: flex;
@@ -28,18 +25,12 @@
 		@include media ("<=xlg"){
 			width: 100%;
 		}
-
-		// @include media ("<=sm"){
-		// 	width: 100%;
-		// }
 	}
 	&__map {
 		width: 921px;
 		height: 320px;
-		// border-top-right-radius: 30px;
-		// border-bottom-right-radius: 30px;
 		border-radius: 30px;
-		// background-color: #4436B1;
+		filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.05));
 		margin-left: -165px;
 		@include media ("<=sm"){
 			margin-left: -15px;
@@ -50,10 +41,9 @@
 		display: flex;
 		flex-direction: column;
 		flex-shrink: 0;
-		// max-width: 22.22222%;
 		margin-top: auto;
 		padding-left: 70px;
-		// margin-left: auto;
+
 		white-space: nowrap;
 		@include media ("<=xs"){
 			margin-right: auto;
@@ -215,7 +205,6 @@
 		display: block;
 		transition: opacity .5s linear;
 		opacity: 0;
-		// margin-bottom: 3px;
 	}
 		
 	@include media ("<=lg") {
