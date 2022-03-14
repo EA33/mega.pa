@@ -66,8 +66,6 @@ $colorText: #614EFD;
 		margin-bottom: 0;
 		margin-left: 25px;
 		flex-shrink: 1;
-		// color: $colorText;
-		margin-bottom: 20px;
 		@include media ("<=sm"){
 			font-size: 13px;
 			line-height: 22px;
