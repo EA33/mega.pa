@@ -201,6 +201,10 @@ $colorText: #818181;
 		font-style: normal;
 		margin-bottom: 27px;
 		color: $colorFont;
+		@include media ("<=sm"){
+			margin-bottom: 20px;
+			
+		}
 	}
 	
 	&__exclamation-text {
@@ -216,6 +220,7 @@ $colorText: #818181;
 		}
 		@include media ("<=sm"){
 			margin-left: 10px;
+			
 		}
 		
 
