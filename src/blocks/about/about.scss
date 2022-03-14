@@ -38,7 +38,7 @@
 			margin: 30px auto 0;
 			@include media ("<=md"){
 				margin-top: 20px;
-				width: 68px;
+				width: 50px;
 			}
 			@include media ("<=sm"){
 				margin-top: 15px;
@@ -147,10 +147,7 @@
 		font-size: 14px;
 		line-height: 22px;
 		text-align: center;
-		// @include media ("<=sm"){
-		// 	font-size: 12px;
-		// 	line-height: 20px;
-		// }
+		margin-bottom: 0;
 	}
 
 }
