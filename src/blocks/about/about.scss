@@ -1,6 +1,7 @@
 .about {
 	$self: &;
 	background: linear-gradient(to bottom, #614EFD 0%, #3ADFFD 59.9%, #FFFFFF 80%) top 70px center / cover no-repeat;
+	// transition: all .3s ease-in;
 	&__container {
 		background-color: $bgColor;
 		filter: drop-shadow( 0 0 5px rgba(0,0,0,0.05));
