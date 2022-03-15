@@ -15,7 +15,6 @@ $colorText: #818181;
 	
 	&__inner {
 		display: flex;
-		// justify-content: space-between;
 		@include media ("<=xs"){
 			flex-wrap: wrap;
 		}
@@ -67,12 +66,8 @@ $colorText: #818181;
 		@include media ("<=md") {
 			font-size: 14px;
 			line-height: 22px;
+			margin-bottom: 20px;
 		}
-		// @include media ("<=sm") {
-		// 	font-size: 14px;
-		// 	line-height: 20px;
-		// 	margin-bottom: 20px;
-		// }
 	}
 
 	&__image {
