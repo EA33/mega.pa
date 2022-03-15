@@ -171,6 +171,9 @@ $colorText: #818181;
 			width: 273px;
 			height: 332px;
 		}
+		@include media ("<=sm"){
+			margin-bottom: auto;
+		}
 	}
 
 	&__exclamation-inner {
